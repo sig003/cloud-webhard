@@ -1,0 +1,198 @@
+.disk_header {
+	background-color:#1182DF;
+	margin:0;
+	padding:0;
+	height:30%;
+}
+.disk_body {
+	display: flex;
+	flex-direction: row;
+}
+.disk_left {
+	background-color: #FAFAFA;
+	width:30%;
+	border:1px solid blue;
+}
+.disk_right {
+	border:1px solid red;
+	width:70%;
+}
+.content_align {
+	display:flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.disk_column_name {
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.disk_column_owner {
+    width: 15%;
+    text-align: center;
+}
+.disk_column_date {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.disk_column_size {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.container_disk {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px repeat(4, 1fr);
+    grid-template-rows: 50px 80px repeat(8, 1fr);
+    grid-template-areas:
+        "header header header header header"
+        "left nav nav nav nav"
+        "left disk disk disk disk"
+        "left disk disk disk disk"
+        "left disk disk disk disk"
+        "left disk disk disk disk"
+        "left disk disk disk disk"
+        "left disk disk disk disk"
+        "left disk disk disk disk"
+        "left disk disk disk disk"
+}
+.header {
+    grid-area: header;
+    background-color: #1182DF;
+    color: white;
+    padding-top:0px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    background-color: #FAFAFA;
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.disk {
+    grid-area: disk;
+    overflow:auto;
+}
+
+.nav {
+    grid-area: nav;
+    border-bottom:1px solid #E6E8EB;
+}
+.left_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    margin-top: 50px;
+}
+.left_sizeBox {
+    margin-bottom: 100px;
+}
+.left_wrapper div {
+    padding-left: 30px;    
+    margin-top: 5px;
+}
+.nav_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    padding: 5px;
+    padding-left: 10px;
+}
+.user_container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-areas:
+        ". user . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+}
+.user_wrapper {
+    grid-area: user;
+}
+.user_info_title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    font-weight: bold;
+}
+@media ( max-width: 800px ) {
+    .container_disk {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 80px repeat(8, 1fr);
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "disk disk disk disk"
+            "disk disk disk disk"
+            "disk disk disk disk"
+            "disk disk disk disk"
+            "disk disk disk disk"
+            "disk disk disk disk"
+            "disk disk disk disk"
+            "disk disk disk disk"
+    }
+    .left {
+        background-color: #FAFAFA;
+        grid-area: left;
+        display: none;
+    }
+}
+.disk_list {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.disk_list_name {
+    width: 50%;
+    text-align: left;
+    padding-left: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.disk_left_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.blank {
+    display: inline-block;
+    width: 10px;
+}
+.empty_folder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}

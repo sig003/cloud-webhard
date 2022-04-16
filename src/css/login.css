@@ -1,0 +1,34 @@
+/*body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}*/
+.container {
+	display: grid;
+	grid-template-rows: 50px 1fr;
+	height: 100vh;
+}
+.head {
+	background-color: #1182DF;
+	color: white;
+	font-size: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px 0px 10px;
+}
+.contents {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;  
+}
+.login_box {
+	padding: 10px;
+}
+.language_box {
+	display: flex;
+	justify-content: space-around;
+	font-size: 13px;
+	cursor: pointer;
+}

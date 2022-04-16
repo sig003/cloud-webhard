@@ -1,0 +1,62 @@
+.admin_list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.admin_list_column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.admin_list_column_name {
+	text-align: center;
+	width: 40%;
+}
+.admin_list_column_etc {
+	text-align: center;
+	width: 20%;
+}
+.admin_list_icon {
+	text-align: center;
+	width: 10%;
+	min-width: 56px;
+	overflow-wrap: break-word;
+}
+.admin_list_name {
+	text-align: left;
+	width: 20%;
+	overflow-wrap: break-word;
+}
+.admin_list_email {
+	text-align: left;
+	width: 20%;
+	overflow-wrap: break-word;
+}
+.admin_list_status {
+	text-align: center;
+	width: 10%;
+	min-width: 64px;
+	overflow-wrap: break-word;
+}
+.admin_list_quota {
+	text-align: center;
+	width: 20%;
+	overflow-wrap: break-word;
+}
+.admin_list_button {
+	text-align: center;
+	width: 10%;
+}
+.user_info {
+	display: flex;
+	align-items: center;
+}
+.user_value {
+	width: 25vw;
+	text-align: left;
+	padding-left: 40px;
+}
